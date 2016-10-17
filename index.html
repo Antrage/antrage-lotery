@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Lotery with pure javascript + html5 + localstorage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"> 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+</head>
+<body>
+<div id="app">    
+    <div id="winners" class="app-blocks">
+         <div class="field" id="task-name-wrap-field">
+             <h2 style="text-align: left;">Winners:</h2><ul id="lucky-name" class=""></ul>
+         </div>
+
+        <div class="field" id="submit-task">
+          <span id="new-winner" class="btn-add">New winner</span>
+        </div>
+    </div>    
+
+    <div id="new" class="app-blocks" >
+    <h3>Add new person</h3>
+         <div class="field" id="task-name-wrap-field">
+            <div id="name" class="submit_post_field" data-ph="Name" contenteditable="true"></div>
+            <div id="s_name" class="submit_post_field" data-ph="Surname" contenteditable="true"></div>
+            <div id="email" class="submit_post_field" data-ph="Email" contenteditable="true"></div>
+            <div id="phone" class="submit_post_field" data-ph="Phone" contenteditable="true"></div>
+            <div class="error" id="error-taskname"></div>
+         </div>
+
+        <div class="field" id="submit-task">
+          <span id="add" class="btn-add">Add</span>          
+        </div>
+    </div>
+   
+    <div id="userlist" class="app-blocks">
+    </div>
+
+    <footer>
+      <h5>
+      	
+    	<span id="clear">Clear list</span>
+    	<h5>Created by Ihor Lysenko</h5>
+
+      </h5>
+    </footer>
+ </div>
+
+ <script src="js/lotery.js"></script>
+
+</body>
+</html>
+ 
