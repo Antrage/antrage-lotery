@@ -1,4 +1,4 @@
-Loteery application with html5 + localstorage + javascript
+Lotery application with html5 + localstorage + javascript
 
 What can it do?
 
