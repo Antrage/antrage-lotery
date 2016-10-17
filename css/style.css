@@ -86,15 +86,6 @@ body {
         padding: 15px;
 }
 
-#more {
-    text-align: left;
-    float: left;
-    font-size: 12px;
-    text-decoration: underline;
-    cursor: pointer;
-    line-height: 34px;
-}
-
 .app-blocks {
     padding: 15px;
     width: 100%;
@@ -125,55 +116,12 @@ body {
     position: relative;
 }
 
-#more-fields {
-    opacity: 0;
-    height: 0px;
-    overflow: hidden;
-}
-
-#more-fields.fadeOut {
-    height: 0px;
-    transition: height 1500ms;
-}
-
-#more-fields.fadeIn {
-    height: auto;
-    transition: height 1500ms;
-}
-
 .app-blocks .field label{
     float: left;
     text-align: left;
     font-size: 16px;
     padding: 0px 0px 5px 0px;
 }
-
-#taskdesc{
-      padding-left: 0;
-    padding-right: 25px;
-    max-height: 200px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    line-height: 16px;
-    padding-top: 6px;
-    margin-bottom: 0;
-    word-wrap: break-word;
-    box-sizing: border-box;
-    border-bottom: solid 1px #e4e6e9;
-    -o-transition: border-bottom-color 0.3s linear;
-    transition: border-bottom-color 0.3s linear;
-    padding: 10px 5px;
-    text-align: left;
-    color: #000;
-    font-size: 13px;
-}
-
-#taskdesc:focus{
-    border-bottom: solid 1px #a9bbcf;
-      padding: 20px 15px;
-}
-
-
 
 .app-blocks .field input,
 .app-blocks .field textarea  {
@@ -193,14 +141,6 @@ body {
      border:  1px solid #a9bbcf;
 }
 
-.app-blocks .field .error {
-    width: 100%;
-    display: block;
-    text-align: right;
-    color: #005057;
-    font-size: 12px;
-    padding: 0px 15px;
-}
 
 .app-blocks .btn-add {
     padding: 7px 16px 8px;
@@ -260,10 +200,6 @@ div.submit_post_field {
     outline: none;
 }
 
-input[type="checkbox"] {
-    margin:5px;
-}
-
 
 .submit_post_field[contentEditable=true]:empty:not(:focus):before{
         content:attr(data-ph);
@@ -271,53 +207,6 @@ input[type="checkbox"] {
         color: #ccc;
         padding: 0px;
 }
-
-
-
-
-[data-info]:hover:before{
-        content:attr(data-info);
-        display: block;
-        position: absolute;
-        opacity: 0.9;
-        bottom: 100%;
-        right: 5px;
-        font-size: 13px;
-        color: #fff;
-        border-radius: 4px;
-        padding: 3px 10px;
-        background: rgba(0,0,0,0.9);
-        animation-name: lateShow;
-        animation-duration: 3s;
-        animation-timing-function: ease-in-out;
-}
-
-[data-info]:hover:after{
-        content:'';
-        display: block;
-    bottom: 100%;
-    margin-bottom: -6px;
-    right: 5%;
-    position: absolute;
-    opacity: 0.9;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 6px 6px 0 6px;
-    animation-name: lateShow;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    border-color: rgba(0,0,0,0.9) transparent transparent transparent;
-}
-
-@keyframes lateShow{
-    0%   {opacity: 0;}
-    20%  {opacity: 0;}
-    50%  {opacity: 0;}
-    75%  {opacity: 0;}
-    100% {opacity: 0.9;}
-}
-
 
 .submit_post_field{
        border-bottom: solid 1px #e4e6e9;
@@ -334,27 +223,6 @@ ul {
     position: relative;
     list-style-type: none;
     padding: 0px;
-}
-
-ul#todolist-item li {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    background: #ffffff;
-    padding: 15px;
-    width: 100%;
-    border-radius: 2px;
-    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
-    margin: 15px 0 0;
-    overflow: hidden;
-  }
-
-ul#todolist-item .animated.checked {
-    background: rgba(255,255,255, 0.5);
-}
-
-.checked span:not(.remove){
-    text-decoration: line-through;
 }
 
 
@@ -433,48 +301,6 @@ footer h5{
     font-size: 12px;
 }
 
-.app-blocks #submit-task.opened{
-  display: inline-block;
-}
-
-#app.fixed .app-blocks{
-  position: fixed; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  z-index: 9; 
-  top: 15px; 
-  width:calc(100% - 30px); 
-  max-width: 570px;
-  margin-left:0px;
-  margin-right: 0px;
-  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8, 0px 4px 15px -4px rgba(0,0,0,0.3);
-}
-
-#app.fixed .app-blocks:after{
-    content: '';
-    position: absolute;
-    display: block;
-    width: 102%;
-    transform: translateX(-1%);
-    height: 90px;
-    bottom: 100%;
-    margin-bottom: 1px;
-    left: 0px;
-    background: #edeef0;
-}
-
-  #app.fixed #todolist-item.padding-top{
-    padding-top:  100px;
-  }
-
-@media screen and (max-width: 640px) {
-.app-blocks #submit-task{
-  display: inline-block;
-    }
-  #app.fixed #todolist-item.padding-top{
-    padding-top:  162px;
-  }
-}
 
 .remove:hover{
         text-decoration: underline;
